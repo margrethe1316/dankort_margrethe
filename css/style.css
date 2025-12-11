@@ -540,6 +540,36 @@ p {
     line-height: 3rem;
   }
 
+  .blok2{
+    margin-left: 10rem;
+    margin-top: 3rem;
+  }
+
+  .blok2 h1{
+    font-size: 5rem;
+  }
+
+  .blok2 h2{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+
+  .order{
+    margin-left: 4.5rem;
+    margin-top: 3rem;
+  }
+
+  .order h1{
+    font-size: 5rem;
+  }
+
+  .order h2{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+
   .kampagne_knap {
     background-color: rgba(230, 29, 39, 1);
     color: rgba(247, 247, 247, 1);
@@ -551,6 +581,81 @@ p {
     border-radius: 4rem;
     cursor: pointer;
     margin-top: 10px;
+  }
+
+/******** Vidste du blok 1 ******/
+
+  .faktablok1 {
+    background-color: rgba(207, 222, 232, 1);
+  }
+
+  .faktablok {
+    text-align: center;
+    background-color: #dbe6f0;
+    padding-top: 2rem;
+  }
+
+  .faktablok p{
+    font-size: 1.8rem;
+    color: rgba(247, 247, 247, 1);
+  }
+
+  .faktablok h1 {
+    font-size: 5rem;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  .fakta-item {
+    width: 250px;
+    padding: 1rem;
+    border-radius: 50px 50px 0 0; /* Runder toppen */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .faktablok {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .fakta-item .tal {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .grøn {
+    background-color: rgba(150, 172, 78, 1);
+    height: 75%;
+    margin-top: 100px;
+  }
+  .blå {
+    background-color: rgba(63, 110, 138, 1);
+    height: 90%;
+    margin-top: 40px;
+  }
+  .rød {
+    background-color: rgba(213, 0, 21, 1);
+    height: 63%;
+    margin-top: 148px;
+  }
+  .lyseblå {
+    background-color: rgba(116, 164, 188, 1);
+    height: 78%;
+    margin-top: 88px;
+  }
+
+  /***** alt om points *****/
+
+  .altompoint{
+    
   }
 
     .belonning_container{
