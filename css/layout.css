@@ -235,7 +235,6 @@ nav ul {
 }
 
 
-
 .order{
     order: 2;
 }
@@ -247,6 +246,7 @@ nav ul {
     border-bottom-left-radius: 35px;
     margin-right: -1rem;
     justify-self: end;
+    margin-top: 3rem;
 
 }
 
@@ -258,6 +258,30 @@ nav ul {
     margin-top: -15rem;
 }
 
+/***** Fakta blok1 *****/
 
+.fakta_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: end;
+  justify-items: end;
+}
+
+.faktablok{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.fakta_grid1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/***** alt om points *****/
+ .altompoint{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr; 
+  }
 
 }
