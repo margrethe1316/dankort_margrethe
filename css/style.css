@@ -309,6 +309,10 @@ p {
     font-size: 1.4rem;
   }
 
+  .din_profil_tekst_2{
+    display: none;
+  }
+
   /******* faktablok 2 mobil ********/
 
   .fakta-item1 {
