@@ -1,120 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Min Profil</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/layout.css">
-</head>
+    <!-- <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/layout.css" /> -->
+    <link rel="stylesheet" href="css/minprofilstyle.css" />
+  </head>
 
-<body>
-     <header>
-        <div>
-            <a href="index.html"><img class="logo" src="img/dankort.svg" alt="logo"></a>   
+  <body>
+    <header>
+      <div>
+        <a href="index.html"
+          ><img class="logo" src="img/dankort.svg" alt="logo"
+        /></a>
+      </div>
+
+      <nav class="navbar">
+        <ul class="menu">
+          <li><a href="din_profil.html">Din profil</a></li>
+          <li><a href="challenges.html">Challenges</a></li>
+          <li><a href="pointshop.html">Pointshop</a></li>
+          <li><a href="dankort.html">Dankort</a></li>
+        </ul>
+
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
-
-        <nav class="navbar">
-            <ul class="menu">
-                <li><a href="din_profil.html">Din profil</a></li>
-                <li><a href="challenges.html">Challenges</a></li>
-                <li><a href="pointshop.html">Pointshop</a></li>
-                <li><a href="dankort.html">Dankort</a></li>
-            </ul>
-
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
-
+      </nav>
     </header>
     <main>
-        <div>
-            <h1>Godaften</h1>
-            <h1>MIN PROFIL</h1>
-        </div>
-        <section>
-            <div>
-                <h2>Dine points</h2>
-                <h3>dynamisk tal</h3>
-            </div>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <img src="" alt="">
-                <p>Navn</p>
-                <p>Efternavn</p>
-                <p>E-mail</p>
-                <p>Telefon</p>
-                <p>Adresse</p>
-            </div>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <h2>Antal challenges gennemført i alt:</h2>
-                <h3>dynamisk tal</h3>
-            </div>
-            <div>
-                <h2>Igangværende challenges:</h2>
-                <h3>dynamisk tal</h3>
-            </div>
-        </section>
-    </main>
-   <footer>
-        <div class="footer_card">
-            <h3>Dankort</h3>
-            <ul>
-                <li>
-                    <p>Om dankort</p>
-                </li>
-                <li>
-                    <p>Presse</p>
-                </li>
-                <li>
-                    <p>Logo og billeder</p>
-                </li>
-            </ul>
-            <h3>Support</h3>
-            <ul>
-                <li>
-                    <p>Kontakt salg</p>
-                </li>
-                <li>
-                    <p>Kontakt kundeservice</p>
-                </li>
-                <li>
-                    <p>Support erhverv</p>
-                </li>
-                <li>
-                    <p>Support privat</p>
-                </li>
-            </ul>
-            <h3>Politikker</h3>
-            <ul>
-                <li>
-                    <p>Privatlivspolitik</p>
-                </li>
-                <li>
-                    <p>Cookies</p>
-                </li>
-                <li>
-                    <p>AEE regulativ</p>
-                </li>
-            </ul>
+      <div class="felx_container">
+        <h1 class="flex-item">MIN PROFIL</h1>
+      </div>
+
+      <h1>GODAFTEN "NAVN"</h1>
+
+      <section>
+        <div class="din_profil_grid_1-1">
+          <div id="dinepoints">
+            <h2>Dine points</h2>
+            <h3>dynamisk tal</h3>
+          </div>
+          <div>
+            <img id="dinpimg" src="img/surdej.png" alt="mad" />
+          </div>
         </div>
 
-        <div class="footer_card2">
-            <img src="img/dankort.svg" alt="logo">
-            <h1>Når vi handler <br> sammen</h1>
+        <div>
+          <div>
+            <h2>Kontooplysninger:</h2>
+          </div>
+          <form>
+            <img src="img/profil.svg" alt="profilbilledeeksempel" />
+
+            <label> Navn </label>
+            <input class="inputfelt" type="text" placeholder="Navn" />
+            <label> Efternavn </label>
+            <input class="inputfelt" type="text" placeholder="Efternavn" />
+            <label> E-mail </label>
+            <input class="inputfelt" type="text" placeholder="E-mail" />
+            <label> Telefon </label>
+            <input class="inputfelt" type="text" placeholder="Telefon" />
+            <label> Adresse </label>
+            <input class="inputfelt" type="text" placeholder="Adresse" />
+          </form>
         </div>
+
+        <div>
+          <img class="vedvandet" src="img/vedvandet.svg" alt="vedvandet" />
+        </div>
+
+        <div class="din_profil_grid_1-1">
+          <div class="rødkasse">
+            <h2>Antal challenges gennemført i alt:</h2>
+            <h3>dynamisk tal</h3>
+          </div>
+          <div class="grønkasse">
+            <h2>Igangværende challenges:</h2>
+            <h3>dynamisk tal</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="felx_container">
+        <p class="flex-item">vælg kategori</p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_card">
+        <h3>Dankort</h3>
+        <ul>
+          <li>
+            <p>Om dankort</p>
+          </li>
+          <li>
+            <p>Presse</p>
+          </li>
+          <li>
+            <p>Logo og billeder</p>
+          </li>
+        </ul>
+        <h3>Support</h3>
+        <ul>
+          <li>
+            <p>Kontakt salg</p>
+          </li>
+          <li>
+            <p>Kontakt kundeservice</p>
+          </li>
+          <li>
+            <p>Support erhverv</p>
+          </li>
+          <li>
+            <p>Support privat</p>
+          </li>
+        </ul>
+        <h3>Politikker</h3>
+        <ul>
+          <li>
+            <p>Privatlivspolitik</p>
+          </li>
+          <li>
+            <p>Cookies</p>
+          </li>
+          <li>
+            <p>AEE regulativ</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_card2">
+        <img src="img/dankort.svg" alt="logo" />
+        <h1>
+          Når vi handler <br />
+          sammen
+        </h1>
+      </div>
     </footer>
     <script src="js/menu.js"></script>
-
-</body>
-
+  </body>
 </html>
