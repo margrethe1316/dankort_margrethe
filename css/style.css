@@ -132,6 +132,7 @@ p {
   h2 {
     font-weight: normal;
     line-height: 3rem;
+    margin-bottom: 2rem;
   }
   /******************************************* index - MOBIL *******************************************/
   .kampagne_knap {
@@ -144,7 +145,17 @@ p {
     font-size: 1rem;
     border-radius: 4rem;
     cursor: pointer;
-    margin-top: 10px;
+    text-decoration: none;
+  }
+
+   .blok2 h3 {
+    font-size: 4rem;
+    margin-top: -1.4rem;
+    margin-left: -5.5rem;
+  }
+
+  .order a{
+    margin-left: 2rem;
   }
 
   /******* faktablok 1 - MOBIL ********/
@@ -268,6 +279,7 @@ p {
     justify-content: center; /* vandret centrering */
     align-items: center; /* lodret centrering */
     height: 100vh; /* fylder hele skærmhøjden */
+    margin-bottom: -10rem;
   }
 
   video {
@@ -291,14 +303,18 @@ p {
 
   /****** Alt om points - MOBIL ******/
 
-  .knap_pil_1 img {
-    height: 30%;
-    width: 30%;
-  }
 
-  .knap_pil_2 img {
-    height: 30%;
-    width: 100%;
+
+  .knap_pil {
+    background: white;
+    border: 1px solid rgba(28, 42, 53, 1);
+    color: var(--accent);
+    padding: 0.6rem 0.8rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+    text-decoration: none;
+    margin-top: 1rem;
   }
 
   .points_card {
@@ -422,7 +438,6 @@ p {
   }
 
   h1 {
-    margin: 0 0 15px 0;
     font-size: 28px;
   }
 
@@ -442,6 +457,7 @@ p {
     margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-bottom: 4rem;
   }
 
   .mærker {
@@ -495,6 +511,16 @@ p {
 
   /***** Challenges - MOBIL *****/
 
+  .challengesh1{
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nu_challenges_h1{
+    margin-left: 1.5rem;
+    font-size: 2rem;
+  }
   .mærker {
     background-color: rgba(186, 209, 223, 1);
     padding: 50px 30px;
@@ -551,6 +577,7 @@ p {
     overflow: hidden; /* skjul det der rager ud */
     position: relative;
     width: 100%;
+    margin-top: 2rem;
   }
 
   .track {
@@ -606,6 +633,48 @@ p {
     letter-spacing: 0.4px;
     color: rgba(28, 42, 53, 1);
     font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+
+    /*********** samarbejdspartnere - MOBIL ***********/
+
+
+    #samarbejdspartnere_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1600px;
+    gap: 30px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgba(207, 222, 232, 1);
+    padding-block: 2rem;
+  }
+
+  .sam_blok{
+    border-radius: 35px;
+    background-color: whitesmoke;
+    padding: 30px 40px;
+  }
+
+  .sam_blok h1{
+    text-align: center;
+  }
+
+  .sam_h1{
+     padding-top: 2rem;
+    padding-left: 1rem;
+    background-color: rgba(207, 222, 232, 1);
+  }
+
+  .flere_p_vej{
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    background-color: rgba(207, 222, 232, 1);
+    padding-bottom: 2rem;
+    font-weight: lighter;
+    margin-bottom: 4rem;
+
   }
 
   /******************************************* footer - MOBIL ************************************************/
@@ -1185,6 +1254,8 @@ p {
   .viewport {
     overflow: hidden;
     position: relative;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   .track {
@@ -1215,9 +1286,10 @@ p {
   .card.center {
     transform: scale(1.05);
     opacity: 1;
-    box-shadow: 0 20px 40px rgba(217, 224, 182, 1);
+    box-shadow: 0 3px 40px rgba(217, 224, 182, 1);
     border-color: rgba(217, 224, 182, 1);
     margin-top: 10px;
+    margin-bottom: 20px;
     background-color: rgba(165, 183, 100, 1);
   }
 
@@ -1258,6 +1330,50 @@ p {
     margin-right: 1rem;
   }
 
+    /*********** samarbejdspartnere - DESKTOP ***********/
+
+
+    #samarbejdspartnere_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 1600px;
+    gap: 30px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgba(207, 222, 232, 1);
+    padding-block: 2rem;
+  }
+
+  .sam_h1{
+    padding-top: 2rem;
+    padding-left: 3rem;
+    background-color: rgba(207, 222, 232, 1);
+
+  }
+  .sam_blok{
+    border-radius: 35px;
+    background-color: whitesmoke;
+    padding: 30px 40px;
+  }
+
+  .sam_blok h1{
+    text-align: center;
+  }
+
+  .sam_blok h1{
+    text-align: center;
+  }
+
+  .flere_p_vej{
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    background-color: rgba(207, 222, 232, 1);
+    padding-bottom: 2rem;
+    font-weight: lighter;
+
+  }
   /*********** footer - DESKTOP ***********/
 
   .footer_card {
@@ -1272,7 +1388,7 @@ p {
   .footer_card h3 {
     font-weight: bold;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 4rem;
     margin-left: 3rem;
   }
 

@@ -60,6 +60,11 @@ img {
     padding-block: 1rem;
   }
 
+    .blok3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .dankort {
     display: block;
     justify-self: end;
@@ -102,6 +107,11 @@ img {
     display: flex;
     justify-self: end;
     width: 20%;
+  }
+
+   .knap_pil {
+    display: flex;
+    justify-self: flex-end;
   }
 
   /****** vidste du at... - layout - MOBIL ******/
