@@ -836,10 +836,10 @@ p {
     grid-row: 2/3;
   }
 
-   .disabled {
+  .disabled {
     position: relative;
-  background-color: rgba(0,0,0,0.3); /* gør kortet “mørkere” */  }
-  
+    background-color: rgba(0, 0, 0, 0.3); /* gør kortet “mørkere” */
+  }
 
   .disabled::after {
     content: "Ikke nok points";
@@ -850,13 +850,13 @@ p {
     padding: 6px 10px;
     width: 58%;
 
-  position: absolute;   /* placér mærkatet absolut */
-  top: 70px;
-  left: 0rem;
-  z-index: 1;
+    position: absolute; /* placér mærkatet absolut */
+    top: 70px;
+    left: 0rem;
+    z-index: 1;
   }
 
-  .kobnu_knap{
+  .kobnu_knap {
     background-color: rgba(150, 172, 78, 1);
     color: rgba(247, 247, 247, 1);
     border: none;
@@ -871,11 +871,11 @@ p {
   }
 
   .kobnu_knap[disabled] {
-  background-color: #ccc;
-  color: #666;
-  cursor: not-allowed;
-  opacity: 0.7;
-}
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
 
   /******************************************* footer - MOBIL ************************************************/
 
@@ -1302,7 +1302,7 @@ p {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: rgba(225, 225, 225, 1);
-    background-image: url(../img/logo_bg.png);
+    background-image: url(../img/logo_bg.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1654,7 +1654,6 @@ p {
   .rødkasse {
     background-color: #c2131c;
     border-radius: 50px;
-
   }
 
   .rødkasse h2 {
@@ -1769,15 +1768,15 @@ p {
     }
   }
 
-  .nu_challenges_h1{
+  .nu_challenges_h1 {
     margin-left: 2rem;
     margin-bottom: 2rem;
   }
 
   .disabled {
     position: relative;
-  background-color: rgba(0,0,0,0.3); /* gør kortet “mørkere” */  }
-  
+    background-color: rgba(0, 0, 0, 0.3); /* gør kortet “mørkere” */
+  }
 
   .disabled::after {
     content: "Ikke nok points";
@@ -1788,13 +1787,13 @@ p {
     padding: 6px 10px;
     width: 35%;
 
-  position: absolute;   /* placér mærkatet absolut */
-  top: 70px;
-  left: 0rem;
-  z-index: 1;
+    position: absolute; /* placér mærkatet absolut */
+    top: 70px;
+    left: 0rem;
+    z-index: 1;
   }
 
-  .kobnu_knap{
+  .kobnu_knap {
     background-color: rgba(150, 172, 78, 1);
     color: rgba(247, 247, 247, 1);
     border: none;
@@ -1809,11 +1808,11 @@ p {
   }
 
   .kobnu_knap[disabled] {
-  background-color: #ccc;
-  color: #666;
-  cursor: not-allowed;
-  opacity: 0.7;
-}
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
 
   /*********** footer - DESKTOP ***********/
 
