@@ -1,36 +1,54 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
-const supabase = createClient(
-  "https://ybukjrunegrgimscoahw.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlidWtqcnVuZWdyZ2ltc2NvYWh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjUyNTczNDQsImV4cCI6MjA4MDgzMzM0NH0.C2NLegMt6TZTCaZfxDl3_Ww73uCNJLqYWhRB2w76mKA"
-);
+const supabase = createClient("https://ybukjrunegrgimscoahw.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlidWtqcnVuZWdyZ2ltc2NvYWh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjUyNTczNDQsImV4cCI6MjA4MDgzMzM0NH0.C2NLegMt6TZTCaZfxDl3_Ww73uCNJLqYWhRB2w76mKA");
 
 const container = document.getElementById("belonning_container");
 
-let allData = [];
-let currentDataSet = [];
+let allData = []; // her gemmer vi alle belønninger
+let currentDataSet = []; // her gemmer vi det udsnit, der skal vises
 
 // Antal points som brugeren har
 const userPoints = Math.floor(Math.random() * (680 - 50 + 1)) + 50;
 document.getElementById("points").textContent = userPoints;
 
 async function getData() {
+  //Henter data fra SupaBase
   const { data, error } = await supabase.from("belonninger").select("*");
+
   if (error) {
     console.error("Supabase fejl:", error);
     return;
   }
-  allData = data || [];
-  currentDataSet = allData;
+
+  console.log("DATA:", data);
+  // showData(data);
+
+  allData = data; // gemmer alle data globalt
+  currentDataSet = allData; // starter med at vise alle
+
   showData(currentDataSet);
 }
 
 getData();
 
+// Tilføj event listeners til knapper
+document.querySelectorAll("button").forEach((knap) => knap.addEventListener("click", showFiltered));
+
+// Filtreringsfunktion
+function showFiltered(event) {
+  const filter = event.target.dataset.kategori;
+
+  if (filter === "All") {
+    currentDataSet = allData;
+  } else {
+    currentDataSet = allData.filter((item) => item.Kategori === filter);
+  }
+
+  showData(currentDataSet);
+}
+
 function showData(dataset) {
-  const sorted = [...dataset].sort(
-    (a, b) => (a.Pointpris ?? 0) - (b.Pointpris ?? 0)
-  );
+  const sorted = [...dataset].sort((a, b) => (a.Pointpris ?? 0) - (b.Pointpris ?? 0));
 
   container.innerHTML = "";
   sorted.forEach((item) => {
@@ -60,17 +78,17 @@ function showData(dataset) {
   });
 }
 
-document.querySelector("#filters")?.addEventListener("click", showFiltered);
+// document.querySelector("#filters")?.addEventListener("click", showFiltered);
 
-function showFiltered(event) {
-  const kategori = event.target.dataset.kategori;
-  if (kategori === "All") {
-    currentDataSet = allData;
-  } else {
-    currentDataSet = allData.filter((item) => item.Kategori === kategori);
-  }
-  showData(currentDataSet);
-}
+// function showFiltered(event) {
+//   const kategori = event.target.dataset.kategori;
+//   if (kategori === "All") {
+//     currentDataSet = allData;
+//   } else {
+//     currentDataSet = allData.filter((item) => item.Kategori === kategori);
+//   }
+//   showData(currentDataSet);
+// }
 
 // --- Popup ÅBN: via knapper genereret i innerHTML ---
 container.addEventListener("click", (e) => {
