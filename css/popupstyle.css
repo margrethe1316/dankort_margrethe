@@ -16,17 +16,17 @@
 /*** kanppen der trigger popup style ***/
 .trigger-btn2 {
   padding: 12px 24px;
-  background-color: #ff00dd;
-  color: rgb(255, 255, 255);
-  border-radius: 5px;
+  background-color: #e61d27;
+  color: white;
+  border-radius: 35px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
 .trigger-btn2:hover {
-  background-color: #0056e3;
+  background-color: #d50015;
   transform: translateY(-2px);
 }
 
@@ -37,7 +37,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(63, 109, 136, 0.8);
+  background: rgb(226, 30, 39, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,8 +49,12 @@
 
 /*** indholdet i popup style ****/
 
+#popup-description2 {
+  color: white;
+}
+
 .popup-content2 {
-  background-color: #e9f0f5;
+  background-color: #a0141b;
   padding: 30px;
   border-radius: 10px;
   width: 90%;
@@ -67,17 +71,33 @@
   right: 15px;
   font-size: 24px;
   cursor: pointer;
-  color: #333;
+  color: white;
+  background-color: #a0141b;
+  border: none;
+}
+
+#formindex {
+  background-color: #a0141b;
 }
 
 /** titel i popup style **/
 #popup-title2 {
-  color: #21303f;
+  color: white;
   margin-bottom: 15px;
 }
 
+.cta-btn2 {
+  text-decoration: underline;
+  border: none;
+  border-radius: 35px;
+  padding: 10px 10px;
+  background-color: #a0141b;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
 .cta-btn2:hover {
-  background-color: darkorange;
+  color: #e61d27;
 }
 
 #offer-toggle2:checked ~ .popup-overlay2 {
@@ -94,14 +114,15 @@
 .app-download-trigger {
   padding: 12px 24px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: #96ac4e;
   color: #fff;
   border: none;
-  border-radius: 6px;
+  border-radius: 35px;
   cursor: pointer;
 }
 .app-download-trigger:hover {
-  background-color: #0056b3;
+  background-color: #a5b764;
+  border-radius: 35px;
 }
 
 .app-download-popup-overlay {

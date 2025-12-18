@@ -1,9 +1,9 @@
 // --- Popup ÅBN: via "Tilmeld dig"-knappen ---
 document.getElementById("tilmeld-btn2").addEventListener("click", () => {
-  document.getElementById("popup-title2").textContent =
-    document.getElementById("tilmeld-btn2").dataset.title;
-  document.getElementById("popup-description2").textContent =
-    document.getElementById("tilmeld-btn2").dataset.description;
+  // document.getElementById("popup-title2").textContent =
+  // document.getElementById("tilmeld-btn2").dataset.title;
+  //  document.getElementById("popup-description2").textContent =
+  //  document.getElementById("tilmeld-btn2").dataset.description;
 
   document.getElementById("offer-toggle2").checked = true;
 });
