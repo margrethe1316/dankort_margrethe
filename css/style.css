@@ -618,7 +618,12 @@ p {
     min-height: 600px;
     padding: 1rem;
     border-radius: 50px;
-    background: linear-gradient(180deg, rgba(217, 224, 182, 1), rgba(217, 224, 182, 1)), var(--card-bg);
+    background: linear-gradient(
+        180deg,
+        rgba(217, 224, 182, 1),
+        rgba(217, 224, 182, 1)
+      ),
+      var(--card-bg);
     border: 1px solid rgba(217, 224, 182, 1);
     box-shadow: 0 10px 30px rgba(217, 224, 182, 1);
     transition: transform 250ms ease, opacity 250ms ease, box-shadow 250ms ease;
@@ -1516,7 +1521,12 @@ p {
   }
 
   .card {
-    background: linear-gradient(180deg, rgba(217, 224, 182, 1), rgba(217, 224, 182, 1)), var(--card-bg);
+    background: linear-gradient(
+        180deg,
+        rgba(217, 224, 182, 1),
+        rgba(217, 224, 182, 1)
+      ),
+      var(--card-bg);
     border: 1px solid rgba(217, 224, 182, 1);
     border-radius: 16px;
     padding: 1rem;
@@ -1649,6 +1659,17 @@ p {
     transition: transform 0.3s ease;
   }
   .mærker:hover {
+    transform: scale(1.05);
+  }
+
+  .mærker_challenges {
+    background-color: #d9e0b6;
+    padding: 50px 30px;
+    border-radius: 35px;
+    transition: transform 0.3s ease;
+  }
+
+  .mærker_challenges:hover {
     transform: scale(1.05);
   }
 
@@ -2045,25 +2066,4 @@ p {
   top: 85px;
   left: 0rem;
   z-index: 1;
-}
-
-.kobnu_knap {
-  background-color: rgba(150, 172, 78, 1);
-  color: rgba(247, 247, 247, 1);
-  border: none;
-  padding: 7px 14px;
-  font-family: "Raleway", sans-serif;
-  font-weight: normal;
-  font-size: 1rem;
-  border-radius: 4rem;
-  cursor: pointer;
-  text-decoration: none;
-  margin-top: 1rem;
-}
-
-.kobnu_knap[disabled] {
-  background-color: #ccc;
-  color: #666;
-  cursor: not-allowed;
-  opacity: 0.7;
 }
