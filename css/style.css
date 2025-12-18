@@ -805,8 +805,7 @@ p {
 
   .felx_container {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 2rem;
+    margin-left: 1rem;
     margin-top: 2rem;
   }
 
@@ -820,6 +819,7 @@ p {
     font-size: 30px;
     font-weight: 300;
     margin-left: 1rem;
+    margin-top: -1rem;
   }
 
   #dinepoints {
@@ -1004,6 +1004,11 @@ p {
     opacity: 0.7;
   }
 
+   .points_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* venstre og højre */
+    gap: 10px;
+   }
   /******************************************* footer - MOBIL ************************************************/
 
   .footer_card {
@@ -1905,8 +1910,7 @@ p {
   /********** overskrift - DESKTOP ***********/
   .felx_container {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 2rem;
+    margin-left: 1rem;
     margin-top: 2rem;
   }
 
