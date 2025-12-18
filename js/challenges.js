@@ -24,7 +24,7 @@ getData();
 function showData(data) {
   data.forEach((id) => {
     container.innerHTML += `
-      <article class="mærker"> 
+      <article class="mærker_challenges"> 
         <div class="${id.Optjenpoints ? "pointpris" : ""}">
           <div class="pointsbanner">
             ${
