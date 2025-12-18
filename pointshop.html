@@ -6,6 +6,7 @@
     <title>Pointshop</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/popupstyle.css" />
   </head>
 
   <body>
@@ -68,19 +69,42 @@
       <section>
         <div class="belonninger">
           <h1>Belønninger du kan bruge dine optjente point på:</h1>
-          <p>Vælg kategori (skal være en knap)</p>
         </div>
 
-        <section id="filters">
-          <button class="filter_knap" data-kategori="All">All</button>
-          <button class="filter_knap" data-kategori="Gavekort">Gavekort</button>
-          <button class="filter_knap" data-kategori="Årskort">Årskort</button>
-          <button class="filter_knap" data-kategori="Oplevelser">
-            Oplevelser
-          </button>
+        <section class="belonninger_container">
+          <div class="dropdown">
+            <button id="btn-pulse">Vælg kateogri</button>
+            <section id="filters" class="dropdown-content">
+              <button id="btn-drop" class="filter_knap" data-kategori="All">
+                All
+              </button>
+              <button
+                id="btn-drop"
+                class="filter_knap"
+                data-kategori="Gavekort"
+              >
+                Gavekort
+              </button>
+              <button id="btn-drop" class="filter_knap" data-kategori="Årskort">
+                Årskort
+              </button>
+              <button
+                id="btn-drop"
+                class="filter_knap"
+                data-kategori="Oplevelser"
+              >
+                Oplevelser
+              </button>
+              <button
+                id="btn-drop"
+                class="filter_knap"
+                data-kategori="Restauranter og cafeer"
+              >
+                Restauranter og cafeer
+              </button>
+            </section>
+          </div>
         </section>
-
-        <section class="belonninger_container"></section>
       </section>
 
       <div id="belonning_container" class="belonning_container"></div>
