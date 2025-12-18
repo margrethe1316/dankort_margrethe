@@ -1012,6 +1012,11 @@ p {
     text-decoration: none;
   }
 
+  .kampagne_knap:hover{
+    background-color: #d50015;
+  transform: translateY(-2px);
+  }
+
   /******** Vidste du at.... blok 1 - DESKTOP ******/
   .faktablok1 {
     background-color: rgba(207, 222, 232, 1);
@@ -1186,6 +1191,11 @@ p {
     transition: background 0.2s, color 0.2s, transform 0.1s;
     text-decoration: none;
     margin-top: 1rem;
+  }
+
+  .knap_pil:hover{
+      transform: translateY(-2px);
+
   }
 
   .points_card {
@@ -1493,8 +1503,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    height: 70vh;
+    height: 75vh;
     box-shadow: 0 10px 30px rgba(217, 224, 182, 1);
     transform: scale(0.94);
     opacity: 0.9;
@@ -1524,8 +1533,7 @@ p {
 
   .card p {
     margin: 0;
-    font-size: 6rem;
-
+    font-size: 2rem;
     color: rgba(28, 42, 53, 1);
   }
 
@@ -1539,7 +1547,7 @@ p {
 
   .card.center .desc {
     display: block; /* vis kun på midterkortet */
-    font-size: 1.4rem; /* gør teksten mindre */
+    font-size: 1rem; /* gør teksten mindre */
     line-height: 1.6;
     color: rgba(28, 42, 53, 1);
     padding: 2rem;
@@ -1551,7 +1559,7 @@ p {
 
   .badge {
     font-family: "Raleway", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background: rgba(217, 224, 182, 1);
     color: var(--accent);
     border: 1px solid whitesmoke;
@@ -1648,6 +1656,7 @@ p {
     font-family: "Raleway", sans-serif;
     color: rgba(33, 48, 63, 1);
     font-weight: normal;
+    padding: 25px;
   }
 
   .min_profil_knap {
@@ -2012,9 +2021,8 @@ p {
   border-top-right-radius: 2rem;
   padding: 6px 10px;
   width: 35%;
-
   position: absolute; /* placér mærkatet absolut */
-  top: 70px;
+  top: 85px;
   left: 0rem;
   z-index: 1;
 }
