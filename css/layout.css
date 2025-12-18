@@ -16,7 +16,7 @@ img {
 }
 
 .kobnu_knap {
-  position: fixed;
+  /* position: fixed; */
   bottom: 20px;
   right: 20px;
 }
@@ -329,7 +329,7 @@ img {
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
     object-fit: cover;
-    margin-top: -6rem;
+    margin-top: -3rem;
   }
 
   /***** Fakta blok1 - layout - DESKTOP *****/
@@ -480,6 +480,7 @@ img {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     overflow: hidden;
+    margin-bottom: -21rem;
   }
 
   .pointshop_h1 {

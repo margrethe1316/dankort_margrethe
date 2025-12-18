@@ -943,6 +943,7 @@ p {
     border-top-right-radius: 2rem;
     padding: 6px 10px;
     width: 58%;
+    margin-bottom: 1rem;
 
     position: absolute; /* placér mærkatet absolut */
     top: 70px;
@@ -1023,11 +1024,11 @@ p {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
+    background-color: rgba(230, 29, 39, 1); /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
+    padding: 12px 24px; /* Some padding */
+    border-radius: 35px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
     max-width: 600px;
   }
@@ -1080,13 +1081,12 @@ p {
 
   .blok2 h3 {
     font-size: 65px;
-    margin-top: 2.2rem;
-    margin-left: -13.7rem;
+    margin-top: -1rem;
+    margin-left: -3.5rem;
   }
 
   .blok3 h1 {
     font-size: 44px;
-    margin-top: 3rem;
   }
 
   .blok2 h2 {
@@ -1112,7 +1112,7 @@ p {
   }
 
   .plus {
-    margin-left: -2rem;
+    margin-left: 1rem;
   }
 
   /****** alt om point knap - DESKTOP *****/
@@ -1224,7 +1224,7 @@ p {
     padding-left: 20px;
     border-bottom-right-radius: 35px;
     width: 475px;
-    margin-left: 17rem;
+    margin-left: 13rem;
     margin-top: 3rem;
     z-index: 10;
     font-size: 44px;
@@ -1248,8 +1248,9 @@ p {
   }
 
   .app_img_desk {
-    width: 180%;
-    height: auto;
+    width: 80%;
+    height: 90%;
+    object-fit: cover;
   }
 
   .hentsomapp h1 {
@@ -1279,7 +1280,7 @@ p {
   }
 
   .hentsomapp li {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     font-family: "Raleway", sans-serif;
     font-size: 1.7rem;
     color: rgba(33, 48, 63, 1);
@@ -1583,6 +1584,7 @@ p {
 
   .tekstblok h2 {
     font-size: 2rem;
+    margin-top: 3rem;
   }
   .tekstblok h4 {
     margin-top: 1rem;
@@ -1641,7 +1643,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 75vh;
+    height: 76vh;
     box-shadow: 0 10px 30px rgba(116, 164, 188, 1);
     transform: scale(0.94);
     opacity: 0.9;
@@ -1684,7 +1686,7 @@ p {
 
   .card.center .desc {
     display: block; /* vis kun på midterkortet */
-    font-size: 25px; /* gør teksten mindre */
+    font-size: 17px; /* gør teksten mindre */
     line-height: 1.6;
     color: whitesmoke;
     padding: 2rem;
@@ -2153,16 +2155,16 @@ p {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
+  background-color: rgba(230, 29, 39, 1); /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  padding: 12px 24px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: rgba(194, 19, 28, 1); /* Add a dark-grey background on hover */
 }
 
 @media (max-width: 1024px) {

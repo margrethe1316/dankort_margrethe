@@ -127,6 +127,7 @@
   border-radius: 35px;
   cursor: pointer;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .app-download-trigger:hover {
   background-color: #a5b764;
@@ -183,6 +184,8 @@
   font-size: 18px;
   transition: all 0.3s ease;
   margin-top: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .cta-btn1:hover {
@@ -254,20 +257,33 @@
 }
 
 /*** kanppen der trigger popup style ***/
+.kobnu_knap{
+  padding: 12px 24px;
+  background-color: #74a4bc;
+  color: white;
+  border-radius: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  border: transparent;
+}
+
+.kobnu_knap:disabled{
+  opacity: 0.5;
+}
+
 .trigger-btn {
   padding: 12px 24px;
   background-color: #74a4bc;
   color: white;
-  border-radius: 5px;
+  border-radius: 35px;
   cursor: pointer;
   font-size: 18px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
 .trigger-btn:hover {
   background-color: #3f6e8a;
-  transform: translateY(-2px);
 }
 
 /*** popuo desktop formatet style ***/
